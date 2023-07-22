@@ -1,38 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
+  height: auto;
+  display: grid;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 15px;
+  padding: 40px;
+  font-size: 16px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+.header{
+  background-image: url("doodle_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  padding-top: -20px;
+  position: sticky;
+}
+
+h1 {
+  color: #F11A7B;
+  font-family: 'VT323', monospace;
+  
+  
+}
+
+body{
+  background-color:#371B58 ;
+  /* background-image:url("5641363.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
+}
+.header-text{
+  text-align: center;
+  letter-spacing: 10px;
+  font-size: 50px;
+ 
+}
+input {
+  position: relative;
+  left: 40%;
+  padding-left: 5px;
+  font-size: 20px;
+  width: 250px;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+table {
+  color: #dfe9f3;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+ 
+}
+
+thead {
+  background-color: rgb(44, 44, 44);
   color: white;
+  text-align: center;
+  height: 40px;
 }
 
-.App-link {
-  color: #61dafb;
+tbody>tr {
+  text-align: center;
+  background-color: #7858A6;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.rank {
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  gap: 10px;
+}
+
+.symbol {
+  text-align: center;
 }
